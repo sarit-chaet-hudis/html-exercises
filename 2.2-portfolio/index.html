@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/dfd460c16b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>2.4 html profile page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Open Sans";
+        src: url("https://fonts.googleapis.com/css?family=Open+Sans")
+            format("woff2"),
+          url("https://fonts.googleapis.com/css?family=Open+Sans")
+            format("woff");
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline;
+        padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: salmon;
+      }
+
+      a:visited {
+        color: #182d68;
+      }
+
+      h1 {
+        font-family: "Quicksand", sans-serif;
+        font-weight: normal;
+        font-size: x-large;
+        color: salmon;
+        padding-top: 15px;
+        padding-bottom: 5px;
+      }
+
+      h2 {
+        font-family: "Quicksand", sans-serif;
+        font-weight: semi-bold;
+        font-size: larger;
+        color: rgb(71, 71, 71);
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+
+      h3 {
+        font-family: "Quicksand", sans-serif;
+        font-weight: regular;
+        font-size: medium;
+        color: rgb(71, 71, 71);
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+
+      button {
+        font-family: "Quicksand", sans-serif;
+        font-weight: regular;
+        font-size: medium;
+        background-color: deepskyblue;
+        border-radius: 10px;
+        padding: 10px;
+        border-style: none;
+      }
+
+      .card {
+        align-items: center;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid rgb(105, 183, 255);
+      }
+
+      .profile-image {
+        border-radius: 50%;
+        height: 180px;
+        width: 180px;
+      }
+
+      .card-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section style="height: 1000px">
+      <div class="card">
+        <img
+          id="profile-image"
+          src="./images/profile.jpeg"
+          class="profile-image"
+          class="card-item"
+        />
+        <h1 id="myName" class="card-item">Sarit Chaet Hudis</h1>
+
+        <h2 class="card-item">Fullstack Developer</h2>
+
+        <h3>Based in Holon. Mango enthusiast.</h3>
+
+        <button onclick="window.location.href='https://twitter.com/pinki5h'">
+          Tweet me
+        </button>
+        <br />
+        <ul class="card-item">
+          <li>
+            <a href="https://www.linkedin.com/in/sarithayathudis/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/sarit-chaet-hudis"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/users/story/15529911"
+              ><i class="fab fa-stack-overflow"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
