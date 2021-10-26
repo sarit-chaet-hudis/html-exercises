@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.1 float Exercise</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+      }
+
+      div {
+        margin: 10px;
+      }
+
+      #container {
+        max-width: 700px;
+        margin: 10px auto;
+        padding: 10px;
+      }
+
+      header,
+      footer {
+        background-color: salmon;
+        padding: 20px 10px;
+        text-align: center;
+      }
+
+      #side {
+        background-color: teal;
+        padding: 10px;
+        width: 30%;
+        float: left;
+        margin: 10px 0px;
+        height: 350px;
+      }
+
+      #main {
+        background-color: yellowgreen;
+        padding: 10px;
+        width: 68%;
+        float: right;
+        margin: 10px 0px;
+        text-align: right;
+        height: 350px;
+      }
+
+      .clr {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>header</h1>
+      </header>
+      <div id="side">
+        <h1>Side</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione
+        tenetur saepe eligendi, corrupti, debitis odio maiores ipsa enim quidem
+        laborum autem est veritatis, voluptate ipsum. Molestias, minus sed.
+        Ratione!
+      </div>
+      <div id="main">
+        <h1>Main</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione
+        tenetur saepe eligendi, corrupti, debitis odio maiores ipsa enim quidem
+        laborum autem est veritatis, voluptate ipsum. Molestias, minus sed.
+        Ratione!
+      </div>
+      <div class="clr"></div>
+      <footer>
+        <h1>footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>
