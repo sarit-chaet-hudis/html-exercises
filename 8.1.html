@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buttons!!!</title>
+    <style>
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0%;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 400px;
+        margin: 20px auto;
+      }
+
+      .square {
+        border-radius: 0pt;
+        border: none;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .round {
+        border-radius: 20px;
+        border: none;
+        margin: 10px;
+      }
+
+      .full:hover {
+        filter: brightness(80%);
+        -webkit-filter: brightness(80%);
+      }
+
+      .green-ghost {
+        border: 2px solid turquoise;
+        background-color: rgba(64, 224, 208, 0);
+      }
+
+      .green-ghost:hover {
+        background-color: rgba(64, 224, 208, 1);
+      }
+
+      .red-ghost {
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0);
+      }
+
+      .red-ghost:hover {
+        background-color: rgba(255, 0, 0, 1);
+      }
+
+      .blue-ghost {
+        border: 2px solid dodgerblue;
+        background-color: rgba(30, 144, 255, 0);
+      }
+
+      .blue-ghost:hover {
+        background-color: rgba(30, 144, 255, 1);
+      }
+
+      .green {
+        background-color: turquoise;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .blue {
+        background-color: dodgerblue;
+      }
+
+      .orange {
+        background-color: orangered;
+      }
+
+      .yellow {
+        background-color: rgb(255, 187, 0);
+      }
+
+      .grey {
+        background-color: grey;
+      }
+
+      button.large {
+        width: 120px;
+        height: 40px;
+      }
+
+      button.medium {
+        width: 90px;
+        height: 35px;
+      }
+
+      button.smaller {
+        width: 70px;
+        height: 28px;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body style="background-color: darkslategray">
+    <div class="container">
+      <h1>Flat</h1>
+      <button class="square full large green">Register</button>
+
+      <button class="square full medium red">Clear</button>
+
+      <button class="square full smaller blue">Submit</button>
+    </div>
+
+    <div class="container">
+      <h1>Round</h1>
+      <button class="round full large orange">Register</button>
+
+      <button class="round full medium yellow">Clear</button>
+
+      <button class="round full smaller grey">Submit</button>
+    </div>
+
+    <div class="container">
+      <h1>Flat Ghost</h1>
+      <button class="square green-ghost large">Register</button>
+
+      <button class="square red-ghost medium">Clear</button>
+
+      <button class="square blue-ghost smaller">Submit</button>
+    </div>
+
+    <div class="container">
+      <h1>Round Ghost</h1>
+      <button class="round green-ghost large">Register</button>
+
+      <button class="round red-ghost medium">Clear</button>
+
+      <button class="round blue-ghost smaller">Submit</button>
+    </div>
+  </body>
+</html>
