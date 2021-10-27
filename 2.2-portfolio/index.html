@@ -5,8 +5,7 @@
       src="https://kit.fontawesome.com/dfd460c16b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>2.4 html profile page</title>
+    <title>profile page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +17,12 @@
       rel="stylesheet"
     />
     <style>
+      * {
+        font-family: "Quicksand", sans-serif;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
       @font-face {
         font-family: "Open Sans";
         src: url("https://fonts.googleapis.com/css?family=Open+Sans")
@@ -51,28 +56,24 @@
       }
 
       h1 {
-        font-family: "Quicksand", sans-serif;
         font-weight: normal;
         font-size: x-large;
         color: salmon;
       }
 
       h2 {
-        font-family: "Quicksand", sans-serif;
         font-weight: semi-bold;
         font-size: larger;
         color: rgb(71, 71, 71);
       }
 
       h3 {
-        font-family: "Quicksand", sans-serif;
         font-weight: regular;
         font-size: medium;
         color: rgb(71, 71, 71);
       }
 
       button {
-        font-family: "Quicksand", sans-serif;
         font-weight: regular;
         font-size: medium;
         background-color: deepskyblue;
@@ -95,7 +96,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 10px;
         border: 1px solid rgb(105, 183, 255);
         background-color: white;
       }
@@ -116,9 +117,21 @@
         padding: 10px;
         margin: 10px auto;
         width: 300px;
-        border-radius: 5px;
+        border-radius: 10px;
         border: 1px solid rgb(105, 183, 255);
         justify-content: center;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
       }
     </style>
   </head>
@@ -159,14 +172,22 @@
       </div>
     </section>
     <section>
-      <div class="about-card">
+      <div class="clr"></div>
+      <div class="about-card left">
         <h1>About me</h1>
         <p>I live in Holon with my hubby and our 2 offsprings.</p>
       </div>
-      <div class="about-card">
+      <div class="about-card middle">
         <h1>Education</h1>
         <p>
           I have a BA in learning technologies and an MA in cognitive science.
+        </p>
+      </div>
+      <div class="about-card right">
+        <h1>Hobbies</h1>
+        <p>
+          Eating, , music, podcasts, reading, painting, pastry-making, working
+          out
         </p>
       </div>
     </section>
