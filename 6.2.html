@@ -6,21 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>6.2 card Exercise</title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
       .card {
         width: 300px;
-        background-image: url("/Dots-Pattern.png");
+        background-color: seashell;
+        /* background-image: url("/Dots-Pattern.png"); */
         padding: 10px;
-        margin: 10px;
+        margin: 15px auto;
         box-shadow: rgb(112, 80, 87) 5px 5px 5px;
+      }
+      figure .image-container {
+        margin: auto;
+        max-width: 100%;
+        background-color: red;
+      }
+
+      .image-container img {
+        max-width: 100%;
       }
     </style>
   </head>
   <body>
     <div class="card">
-      <img
-        src="/320px-Tel-Aviv_Port_(long-exposure_HDR).jpg"
-        style="width: inherit"
-      />
+      <figure class="image-container">
+        <img src="/320px-Tel-Aviv_Port_(long-exposure_HDR).jpg" />
+      </figure>
       <h1>Tel Aviv Port</h1>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa repudiandae
       autem quibusdam quaerat officiis. Facilis enim tenetur tempora explicabo
@@ -29,10 +42,9 @@
     </div>
 
     <div class="card">
-      <img
-        src="/320px-Tel-Aviv_Port_(long-exposure_HDR).jpg"
-        style="width: inherit"
-      />
+      <figure class="image-container">
+        <img src="/320px-Tel-Aviv_Port_(long-exposure_HDR).jpg" />
+      </figure>
       <h1>Tel Aviv Port</h1>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa repudiandae
       autem quibusdam quaerat officiis. Facilis enim tenetur tempora explicabo
@@ -40,10 +52,9 @@
       mollitia at maxime.
     </div>
     <div class="card">
-      <img
-        src="/320px-Tel-Aviv_Port_(long-exposure_HDR).jpg"
-        style="width: inherit"
-      />
+      <figure class="image-container">
+        <img src="/320px-Tel-Aviv_Port_(long-exposure_HDR).jpg" />
+      </figure>
       <h1>Tel Aviv Port</h1>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa repudiandae
       autem quibusdam quaerat officiis. Facilis enim tenetur tempora explicabo
